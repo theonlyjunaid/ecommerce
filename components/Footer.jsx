@@ -1,82 +1,48 @@
 import React from 'react'
-import Link from 'next/link'
 
 function Footer() {
-
     return (
-        <>
-            <div className='w-full  bg-gray-600 text-center sm:hidden' >
-                <div className='text-4xl font-bold first-letter:text-blue-800'>SKINwala</div>
-                <div className=''><i className='bx bxl-whatsapp text-4xl' ></i> 7827152956</div>
-                <div className='text-3xl justify-evenly flex'><i className='bx bxl-instagram'></i><i className='bx bxl-facebook-circle' ></i><i className='bx bxl-youtube' ></i></div>
-                <div className='text-3xl'>How to apply?</div>
-                <div className='flex justify-around'>
-                    <div className='grid grid-cols-1'>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                    </div>
-                    <div className='grid grid-cols-1'>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                        <Link href="/">
-                            <a>hello</a>
-                        </Link>
-                    </div>
-
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-5 bg-black text-white pt-4 items-center'>
+            <div className='grid md:grid-cols-2'>
+                <div className='text-center'>
+                    <p className='text-lg font-semibold py-2 my-2  border-b '>Options</p>
+                    <ul className=' px-8 '>
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div className='text-center my-4  px-20'>
+                    <p className='text-lg font-semibold border-t md:border-0'>Profile</p>
+                    <ul className=''>
+                        <li> my profile </li>
+                        <li> my Cart </li>
+                        <li> my Orders </li>
+                    </ul>
                 </div>
             </div>
-            <div className='w-full  bg-gray-600 text-center hidden sm:flex p-10 justify-evenly' >
-                <div className=''>
-                    <div className='text-4xl font-bold first-letter:text-blue-800'>SKINwala</div>
-                    <div className='flex justify-around'>
-                        <div className='grid grid-cols-1'>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                        </div>
-                        <div className='grid grid-cols-1'>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                            <Link href="/">
-                                <a>hello</a>
-                            </Link>
-                        </div>
 
-                    </div>
+            <div>
+                <div className='text-center text-3xl'>
+                    How to Apply?
                 </div>
-                <div className='text-3xl '>How to apply?</div>
-                <div>
-                    <div className=''><i className='bx bxl-whatsapp text-4xl' ></i> 7827152956</div>
-                    <div className=''><i className='bx bxl-instagram text-4xl' ></i> 7827152956</div>
-                    <div className=''><i className='bx bxl-facebook-circle text-4xl' ></i> 7827152956</div>
-                    <div className=''><i className='bx bxl-youtube text-4xl' ></i> 7827152956</div>
-
-                </div>
-
-
             </div>
-        </>
+
+            <div>
+                <div className='text-center py-2'>
+                    <div className='text-3xl'>Socials</div>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
     )
 }
 
